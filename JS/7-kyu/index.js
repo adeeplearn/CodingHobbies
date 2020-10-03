@@ -15,3 +15,13 @@
 
     
 */
+
+//solution
+String.prototype.toJadenCase = function () {
+    return this.split(' ')
+        .map(str => str.charAt(0).toUpperCase() + str.slice(1)).join(' ');
+};
+
+//sample-test
+var str = "How can mirrors be real if our eyes aren't real";
+Test.assertEquals(str.toJadenCase(), "How Can Mirrors Be Real If Our Eyes Aren't Real");
