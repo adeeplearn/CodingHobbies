@@ -14,10 +14,14 @@
 function findShort(s) {
 
     //  can use code below
+
     //   let warr = s.split(' ');  // add to array by emit the space 
     //   let wlen = warr.map(str => str.length ); // count string length in arr element
     //   let sw = Math.min(...wlen);    // spread values in array with min number
     //   return sw;     // get the shortest word
+
+    //best-practice
+    // return Math.min.apply(null, s.split(' ').map(w => w.length));
 
     return Math.min(...s.split(' ').map(str => str.length));
 }
