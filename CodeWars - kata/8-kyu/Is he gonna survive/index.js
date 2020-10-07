@@ -15,8 +15,9 @@
 
 //Solution
 function hero(bullets, dragons) {
-    // each dragon takes 2 bullets to defeated
-    // how many bullets should carry    
+    // each dragon takes 2 bullets to defeated 
+    // how many bullets should carry 
+    // if bullets > dragon => hero survive (true)
     return bullets / 2 >= dragons ? true : false;
 }
 
