@@ -17,15 +17,13 @@
 function hero(bullets, dragons) {
     // each dragon takes 2 bullets to defeated
     // how many bullets should carry    
-    let calc = bullets - dragons * 2
-    if (calc == 0) {
-        return true;
-    } else if (calc >= 0) {
-        return true;
-    } else {
-        return false;
-    }
+    return bullets / 2 >= dragons ? true : false;
 }
+
+//best-practice
+// function hero(bullets, dragons){
+//     return bullets >= dragons * 2
+//   }
 
 //sample-test
 console.log(hero(10, 5), true);
